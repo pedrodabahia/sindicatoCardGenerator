@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+    width: 20vw;
+    height: 7vw;
+    margin: 6vw auto;
+}
+
+
+div form{
+    text-align: center;
+}
+
+.pesquisa form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pesquisa form label{
+    width: 100%;
+    background-color: red;
+}
+.pesquisa form input{
+    width: 15vw;
+    padding:1vw 0;
+}
+.pesquisa form button{
+    width: 3vw;
+    border-radius: 0.5vw;
+    padding: 0 !important;
+}
+
+div form input, div form label{
+    width: 100%;
+    display: block;
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    border-radius: 0.5vw;
+}
+div form input{
+    margin-top: 0.5vw;
+    padding: 0.8vw 0vw ;
+}
+div form .input-form{
+    margin: 0;
+}
+div form button{
+    
+    width: 100%;
+    padding: 1vw;
+    margin: 0 auto;
+}
