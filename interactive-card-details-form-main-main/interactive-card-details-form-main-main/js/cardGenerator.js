@@ -7,7 +7,9 @@
     }
 
 
- function generatorCard(){
+
+
+async function generatorCard(){
     const name = document.getElementById('input-name').value;
     const matricula = document.getElementById('input-namber').value;
     const cpf = document.getElementById('input-cpf').value;
@@ -46,5 +48,6 @@ console.log(name)
 
 
      doc.save("cartao_teste.pdf");
+
 }
 

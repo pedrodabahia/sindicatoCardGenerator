@@ -22,11 +22,17 @@ $(document).ready(function(){
 
    //mascaraInputNamber()  
     //formata o input namber quando o usuario começa a digitar
-    $("#btn-form").click(function(e){
-       
+    $("#btn-form").click(async function(e){
+      e.preventDefault();
+
         var name = $('#input-name').val()
         var numero = $('#input-namber').val()
         var cpf = $('#input-cpf').val()
+
+      const result = await verificador(numero);
+      console.log(result);
+
+if(result){
 
        name = tranformaTexto(name)
 
@@ -43,7 +49,10 @@ if(name == '' || numero == '' || cpf == ''){
         e.preventDefault();
         }
         
-    });
+      }else{
+        alert("deu ruim demais pedo")
+    }
+      });
 
   /*  $('#btnOpen').click(() => {
       //recarrega a pagina
@@ -51,5 +60,6 @@ if(name == '' || numero == '' || cpf == ''){
         location.reload();
 
     })*/
+
 
   });
