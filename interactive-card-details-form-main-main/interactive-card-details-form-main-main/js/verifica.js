@@ -1,7 +1,7 @@
-async function verificador(matricula) {
+		async function verificador(matricula) {
 
   const msg = document.getElementById("mensagemStatus");
-  const apiUrl = "http://localhost:8080/usuarios/listar";
+  const apiUrl = "https://sindicato-back.onrender.com/usuarios/listar";
   const username = 'pedro';
   const password = 1234;
   const matrix = parseInt(matricula?.toString().trim(), 10);
